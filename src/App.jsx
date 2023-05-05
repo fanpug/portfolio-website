@@ -1,8 +1,14 @@
-import React from 'react';
+import {Navbar, Hero, About, Skills, Portfolio, Contact, Footer} from "./components";
 
 const App = () => (
   <div>
-    Hola world
+    <Navbar />
+    <Hero />
+    <About />
+    <Skills />
+    <Portfolio />
+    <Contact />
+    <Footer />
   </div>
 )
 
