@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+
 export const navLinks = [
     {
         id: "home",
@@ -19,4 +21,10 @@ export const navLinks = [
         id: "contact",
         title: "Contact",
     },
+];
+
+export const socialMedia = [
+    <FaLinkedin />,
+    <FaTwitter />,
+    <FaGithub />,
 ];
