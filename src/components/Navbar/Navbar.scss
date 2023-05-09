@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7rem 1.5rem 0 1.5rem;
+    padding: 1.2rem 2rem;
     margin: 0 auto;
 }
 
@@ -29,6 +29,12 @@
     display: flex;
     list-style: none;
 
+    //this style will only apply if the device
+    //has a screen and that screen is 768px or smaller
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
     li {
         margin-left: 3rem;
 
@@ -39,6 +45,31 @@
             font-size: 0.85rem;
             opacity: 0.6;
             transition: 0.5s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.social-icons {
+    display: flex;
+
+    //this style will only apply if the device
+    //has a screen and that screen is 768px or smaller
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    div {
+        margin-left: 1rem;
+
+        svg {
+            color: #fff;
+            opacity: 0.6;
+            cursor: pointer;
+            transition: 0.3s;
 
             &:hover {
                 opacity: 1;
