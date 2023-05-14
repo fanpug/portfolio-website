@@ -4,6 +4,11 @@
     top: 0;
     left: 0;
     z-index: 10;
+
+    &.active {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
 }
 
 .nav-container {
