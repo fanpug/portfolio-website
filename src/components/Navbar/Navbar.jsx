@@ -75,7 +75,7 @@ const Navbar = () => {
           <HiX onClick={() => setMenuToggle(false)} />
           {navLinks.map((navLink, index) => (
             <li key={navLink.id}>
-              <a href={`#${navLink.id}`}>
+              <a href={`#${navLink.id}`} onClick={() => setMenuToggle(false)}>
                 {navLink.title}
               </a>
             </li>
