@@ -1,5 +1,6 @@
 import './Hero.scss';
 import { portfolio } from '../../assets';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -17,7 +18,12 @@ const Hero = () => {
           to craft innovative <br />
           web products.
         </p>
-        <a href="contact">connect with me</a>
+        <motion.a href="#contact"
+            whileHover={{scale: 1.1}}
+            transition={{duration: 0.3}}
+        >
+          Connect With Me
+        </motion.a>
         <div className="web">Web Developer</div>
         <div className="ui">UI/UX Designer</div>
         <div className="freelance">Freelancer</div>
