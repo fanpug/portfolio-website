@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='container' id='home'>
+    <section className='container container-flex' id='home'>
       <div className="profile">
         <img src={portfolio} alt="Portfolio image" />
       </div>
