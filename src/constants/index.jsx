@@ -13,7 +13,8 @@ import {
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import { BsMedium } from "react-icons/bs";
+import { work1, work2 } from '../assets';
+
 export const navLinks = [
   {
     id: "home",
@@ -107,4 +108,23 @@ export const flavorNumbers = [
     number: "117+",
     itemName: "Clients Served",
   },
+];
+
+export const workImages = [
+  {
+    id: 1,
+    img: work1,
+    name: "project 1",
+    category: "web"
+  },
+  {
+    id: 2,
+    img: work2,
+    name: "project 2",
+    category: "web"
+  },
+];
+
+export const workNavs = [
+  "All", "Web", "App", "Design"
 ];
