@@ -7,9 +7,11 @@ const Hero = () => {
     animation: {
       y: [0, -15],
       transition: {
-        yoyo: Infinity,
-        duration: 2,
+        repeat: Infinity,
+        repeatType: "mirror",
+        duration: 1.5,
         delay: 1,
+        ease: "easeInOut"
       }
     }
   }
