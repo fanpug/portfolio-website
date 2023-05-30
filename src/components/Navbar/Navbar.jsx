@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Navbar.scss';
 import { navLinks, socialMedia } from '../../constants';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -40,7 +40,18 @@ const Navbar = () => {
   }, [])
 
   return (
-    <header className={scroll ? "header active" : "header"}>
+    <motion.header 
+      initial={{
+        y:-25
+      }}
+      animate={{
+        y:-5
+      }}
+      transition={{
+        duration: 0.4
+      }}
+      className={scroll ? "header active" : "header"}
+    >
       <nav className='nav-container'>
         <div className='logo'>
           <h3>HN</h3>
@@ -89,7 +100,7 @@ const Navbar = () => {
           ))}
         </motion.div>
       </nav>
-    </header>
+    </motion.header>
   )
 }
 

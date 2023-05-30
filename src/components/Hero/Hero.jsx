@@ -3,8 +3,34 @@ import { portfolio } from '../../assets';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const moveVariants = {
+    animation: {
+      y: [0, -15],
+      transition: {
+        yoyo: Infinity,
+        duration: 2,
+        delay: 1,
+      }
+    }
+  }
+
   return (
-    <section className='container container-flex' id='home'>
+    <motion.section 
+      initial={{
+        y:-15,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 1,
+        delay: 0.2
+      }}
+      className='container container-flex' 
+      id='home'
+    >
       <div className="profile">
         <img src={portfolio} alt="Portfolio image" />
       </div>
@@ -18,9 +44,12 @@ const Hero = () => {
           to craft innovative <br />
           web products.
         </p>
-        <motion.a href="#contact"
-            whileHover={{scale: 1.1}}
-            transition={{duration: 0.3}}
+        <motion.a 
+          href="#contact"
+          variants={moveVariants}
+          animate="animation"
+          whileHover={{scale: 1.1}}
+          transition={{duration: 0.3}}
         >
           Connect With Me
         </motion.a>
@@ -28,7 +57,7 @@ const Hero = () => {
         <div className="ui">UI/UX Designer</div>
         <div className="freelance">Freelancer</div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 
