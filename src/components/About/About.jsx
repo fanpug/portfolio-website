@@ -1,5 +1,5 @@
 import './About.scss';
-import { portfolio } from '../../assets';
+import { portfolio, curriculum } from '../../assets';
 import { bios } from '../../constants';
 import { motion } from 'framer-motion';
 
@@ -62,7 +62,9 @@ const About = () => {
               </div>
             );
           })}
-          <motion.a href="#" download=""
+          <motion.a 
+            href={curriculum} 
+            download="Curriculum-Humberto"
             whileHover={{scale: 1.1}}
             transition={{duration: 0.3}}
           >
