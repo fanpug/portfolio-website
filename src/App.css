@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(./Font/Poppins-Medium.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,16 +20,23 @@ img {
   width: 100%;
 }
 
+input {
+  font-family: "Poppins";
+}
+
+textarea {
+  font-family: "Poppins";
+}
+
+button {
+  font-family: "Poppins";
+}
+
 .container {
   max-width:1224px;
   min-height: 100vh;
   padding: 7rem 1.5rem 0 1.5rem;
   margin: 0 auto;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url(./Font/Poppins-Medium.ttf);
 }
 
 .title {

@@ -1,0 +1,127 @@
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #fff;
+    border-radius: 15px;
+    max-width: 1100px;
+    gap: 2rem;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
+
+    @media screen and (max-width: 760px) {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.contact-left-container {
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.contact-text {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    
+    p {
+        font-size: 0.85rem;
+    }
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #8c12f0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.contact-social-icons {
+    display: flex;
+    margin-top: 1rem;
+
+    //this style will only apply if the device
+    //has a screen and that screen is 768px or smaller
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    div {
+        margin-right: 1rem;
+
+        svg {
+            color: #000;
+            opacity: 0.6;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.3rem;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.contact-right {
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 0.5rem;
+
+    input {
+        border: none;
+        outline: none;
+        margin-bottom: 0.5rem;
+        padding: 1rem 1.5rem;
+        background: #f3f3f3;
+        border-radius: 5px;
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        margin-bottom: 0.5rem;
+        padding: 1rem 1.5rem;
+        background: #f3f3f3;
+        border-radius: 5px;
+        resize: none;
+        min-height: 150px;
+    }
+}
+
+.btn {
+    background: #8c12f0;
+    margin-top: 1rem;
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    width: 4.2rem;
+    cursor: pointer;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}

@@ -10,6 +10,7 @@ import {
   FaTwitter,
   FaGithub,
   FaLinkedin,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
@@ -127,4 +128,17 @@ export const workImages = [
 
 export const workNavs = [
   "All", "Web", "App", "Design"
+];
+
+export const contacts = [
+  {
+    id: 1,
+    icon: <FaMapMarkerAlt />,
+    infoText: "16 Road, TharKayTa , Yangon"
+  },
+  {
+    id: 2,
+    icon: <FaPaperPlane />,
+    infoText: "abee02@gmail.com"
+  }
 ];
