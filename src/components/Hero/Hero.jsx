@@ -16,6 +16,8 @@ const Hero = () => {
 
   return (
     <motion.section 
+      className='container container-flex' 
+      id='home'
       initial={{
         y:-15,
         opacity: 0
@@ -28,8 +30,6 @@ const Hero = () => {
         duration: 1,
         delay: 0.2
       }}
-      className='container container-flex' 
-      id='home'
     >
       <div className="profile">
         <img src={portfolio} alt="Portfolio image" />

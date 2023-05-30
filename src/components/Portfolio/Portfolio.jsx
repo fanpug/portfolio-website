@@ -25,12 +25,30 @@ const Portfolio = () => {
 
   return (
     <section className='container' id='portfolio'>
-      <div className="title">
+      <motion.div 
+        className="title"
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         <span>My Work</span>
         <h1>Awesome Projects</h1>
-      </div>
+      </motion.div>
 
-      <div className="buttons">
+      <motion.div 
+        className="buttons"
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         {workNavs.map((workNav, idx) =>
           <button
             key={idx}
@@ -40,9 +58,22 @@ const Portfolio = () => {
             {workNav}
           </button>
         )}
-      </div>
+      </motion.div>
 
-      <div className="workImages">
+      <motion.div 
+        className="workImages"
+        initial={{
+          x: 0,
+          opacity: 0
+        }}
+        whileInView={{
+          x: [-250, 0],
+          opacity: 1
+        }}
+        transition={{
+          duration: 1
+        }}
+      >
         {works.map((workImage) =>
           <div className="workImage" key={workImage.id}>
 
@@ -98,9 +129,22 @@ const Portfolio = () => {
             </motion.div>
           </div>
         )}
-      </div>
+      </motion.div>
       
-      <div className="talk">
+      <motion.div 
+        className="talk"
+        initial={{
+          x: 0,
+          opacity: 0
+        }}
+        whileInView={{
+          x: [250, 0],
+          opacity: 1
+        }}
+        transition={{
+          duration: 1
+        }}
+      >
         <div className="talk_left">
           <h3>so let's talk about <br /> <span>your next project</span></h3>
         </div>
@@ -113,7 +157,7 @@ const Portfolio = () => {
             Contact Me
           </a>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   )
 }

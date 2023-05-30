@@ -1,9 +1,21 @@
 import './Footer.scss';
 import { socialMedia } from '../../constants';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className='footer'>
+    <motion.footer 
+      className='footer'
+      initial={{
+        opacity: 0
+      }}
+      whileInView={{
+        opacity: 1
+      }}
+      transition={{
+        duration: 1.5
+      }}
+    >
       <div className="copyright">
         <p>Copyright &copy; 2023 All rights reserved | Made by <span>Humberto Navarro</span></p>
       </div>
@@ -19,7 +31,7 @@ const Footer = () => {
           )}
         </div>
       </div>
-    </footer>
+    </motion.footer>
   )
 }
 

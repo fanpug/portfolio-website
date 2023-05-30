@@ -5,12 +5,34 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   return (
     <section className='container' id='contact'>
-      <div className="title">
+      <motion.div 
+        className="title"
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         <span>Get in touch</span>
         <h1>Contact me</h1>
-      </div>
+      </motion.div>
       <div className="contact-form">
-        <div className="contact-left-container">
+        <motion.div 
+          className="contact-left-container"
+          initial={{
+            x: 0,
+            opacity: 0
+          }}
+          whileInView={{
+            x: [-250, 0],
+            opacity: 1
+          }}
+          transition={{
+            duration: 1
+          }}
+        >
           <h3>Just Say Hi!</h3>
           <p className='contact-text'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem distinctio dolor quisquam eveniet quo praesentium nulla, earum delectus expedita ut enim pariatur facilis quibusdam minima vitae aliquam a nostrum deleniti?
@@ -30,9 +52,22 @@ const Contact = () => {
               <div key={idx}>{socialIcon}</div>
             )}
           </div>
-        </div>
+        </motion.div>
         
-        <div className="contact-right-container">
+        <motion.div 
+          className="contact-right-container"
+          initial={{
+            x: 0,
+            opacity: 0
+          }}
+          whileInView={{
+            x: [250, 0],
+            opacity: 1
+          }}
+          transition={{
+            duration: 1
+          }}
+        >
           <h3>Get In Touch</h3>
           <div className="row">
             <input type="text" placeholder='First Name'/>
@@ -57,7 +92,7 @@ const Contact = () => {
           >
             <a href="#">Send</a>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

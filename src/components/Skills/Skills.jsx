@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { icons, experiences, flavorNumbers } from "../../constants";
+import { motion } from "framer-motion";
 import "./Skills.scss";
 
 const Skills = () => {
@@ -7,12 +8,30 @@ const Skills = () => {
 
   return (
     <section className="container" id="skills">
-      <div className="title">
+      <motion.div 
+        className='title'
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         <span>What I Expert</span>
         <h1>Skills And Experience</h1>
-      </div>
+      </motion.div>
 
-      <div className="select">
+      <motion.div 
+        className="select"
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         <button
           onClick={() => setActiveButton(1)}
           className={activeButton === 1 ? "active" : ""}
@@ -26,17 +45,35 @@ const Skills = () => {
         >
           Experience
         </button>
-      </div>
+      </motion.div>
 
-      <div className='skills'>
+      <motion.div 
+        className='skills'
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         {activeButton === 1 && icons.map((icon, idx) => 
           <div key={idx} className='icon'>
             {icon}
           </div>
         )}
-      </div>
+      </motion.div>
 
-      <div className='experiences'>
+      <motion.div 
+        className='experiences'
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         {activeButton === 2 && experiences.map((experience) => 
           <div key={experience.id} className='experience'>
             <span>
@@ -48,9 +85,18 @@ const Skills = () => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
 
-      <div className='flavor-numbers'>
+      <motion.div 
+        className='flavor-numbers'
+        initial={{
+          opacity: 0
+        }}
+        whileInView={{
+          y: [-50, 0],
+          opacity: 1
+        }}
+      >
         {flavorNumbers.map((number) => 
           <div key={number.id} className='flavor-number'>
             <div className='number'>
@@ -61,7 +107,7 @@ const Skills = () => {
             </div>
           </div>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 };
