@@ -77,7 +77,7 @@ const Portfolio = () => {
         {works.map((workImage) =>
           <div className="workImage" key={workImage.id}>
 
-            <img src={workImage.img} alt="work-image" />
+            <img src={workImage.img} alt={workImage.name} />
             <motion.div
               initial={{
                 opacity: 0

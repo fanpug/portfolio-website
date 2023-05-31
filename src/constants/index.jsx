@@ -19,11 +19,12 @@ import {
   SiTypescript, 
   SiMongodb, 
   SiTailwindcss, 
-  SiNextdotjs, 
+  SiNextdotjs,
+  SiFirebase,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { TbSql } from "react-icons/tb";
-import { work1, work2 } from '../assets';
+import { work1, work2, work3 } from '../assets';
 
 export const navLinks = [
   {
@@ -97,6 +98,7 @@ export const icons = [
   <DiJava />,
   <TbSql />,
   <SiMongodb />,
+  <SiFirebase />,
   <FaFigma />,
   <FaAws />,
   <FaDocker />,
@@ -139,14 +141,26 @@ export const workImages = [
   {
     id: 1,
     img: work1,
-    name: "project 1",
-    category: "web"
+    name: "Modern Bank App Design",
+    category: "web",
+    repo: "https://github.com/fanpug/bank-modern-app",
+    view: "https://bank-modern-app-fanpug.vercel.app/"
   },
   {
     id: 2,
     img: work2,
-    name: "project 2",
-    category: "web"
+    name: "To-Do List App",
+    category: "web",
+    repo: "https://github.com/fanpug/react-todo-app",
+    view: "https://react-todo-app-43dac.web.app/"
+  },
+  {
+    id: 3,
+    img: work3,
+    name: "Administración de Ligas de Fútbol",
+    category: "app",
+    repo: "https://github.com/a329782/UXProjectApp",
+    view: "https://github.com/a329782/UXProjectApp"
   },
 ];
 
@@ -158,6 +172,6 @@ export const contacts = [
   {
     id: 1,
     icon: <FaPaperPlane />,
-    infoText: "abee02@gmail.com"
+    infoText: "navarro.andujo444@yahoo.com"
   }
 ];
