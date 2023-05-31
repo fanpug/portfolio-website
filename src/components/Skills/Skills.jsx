@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { icons, experiences, flavorNumbers } from "../../constants";
+//import { icons, experiences, flavorNumbers } from "../../constants";
+import { icons, experiences } from "../../constants";
 import { motion } from "framer-motion";
 import "./Skills.scss";
 
@@ -87,7 +88,7 @@ const Skills = () => {
         )}
       </motion.div>
 
-      <motion.div 
+      {/* <motion.div 
         className='flavor-numbers'
         initial={{
           opacity: 0
@@ -107,7 +108,7 @@ const Skills = () => {
             </div>
           </div>
         )}
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };

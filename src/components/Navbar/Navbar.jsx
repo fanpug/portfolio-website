@@ -69,9 +69,9 @@ const Navbar = () => {
 
         <div className='social-icons'>
             {socialMedia.map((icon, index) => (
-              <div key={index}>
-                {icon}
-              </div>
+              <a href={icon.link} key={index} target='_blank'>
+                {icon.icon}
+              </a>
             ))}
         </div>
 

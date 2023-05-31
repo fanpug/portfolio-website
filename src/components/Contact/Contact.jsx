@@ -48,8 +48,10 @@ const Contact = () => {
             </div>
           )}
           <div className="contact-social-icons">
-            {socialMedia.map((socialIcon, idx) => 
-              <div key={idx}>{socialIcon}</div>
+            {socialMedia.map((icon, idx) => 
+              <a href={icon.link} key={idx} target='_blank'>
+                {icon.icon}
+              </a>
             )}
           </div>
         </motion.div>

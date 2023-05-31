@@ -24,10 +24,10 @@ const Footer = () => {
         <h4>Follow Me</h4>
         <div className="stick"></div>
         <div className="footer-social-icons">
-          {socialMedia.map((socialIcon, idx) => 
-            <div key={idx}>
-              {socialIcon}
-            </div>
+          {socialMedia.map((icon, idx) => 
+            <a href={icon.link} key={idx} target='_blank'>
+              {icon.icon}
+            </a>
           )}
         </div>
       </div>

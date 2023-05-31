@@ -39,7 +39,20 @@ export const navLinks = [
   },
 ];
 
-export const socialMedia = [<FaLinkedin />, <FaTwitter />, <FaGithub />];
+export const socialMedia = [
+  {
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/humberto-alejandro-n-2a65a0a6/"
+  }, 
+  {
+    icon: <FaTwitter />,
+    link: "https://twitter.com/navarro_dev"
+  }, 
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/fanpug"
+  }
+];
 
 export const bios = [
   {
@@ -87,7 +100,7 @@ export const experiences = [
     company: "shop.com.mm",
   },
 ];
-
+/*
 export const flavorNumbers = [
   {
     id: 1,
@@ -110,7 +123,7 @@ export const flavorNumbers = [
     itemName: "Clients Served",
   },
 ];
-
+*/
 export const workImages = [
   {
     id: 1,
