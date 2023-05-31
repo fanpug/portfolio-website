@@ -69,7 +69,7 @@ export const bios = [
     id: 1,
     icon: <FaUser />,
     key: "Name",
-    value: "Humberto Navarro",
+    value: "Alex Navarro",
   },
   {
     id: 2,
@@ -109,7 +109,7 @@ export const experiences = [
   {
     id: 1,
     year: "2019",
-    position: "Artista del Sandwich",
+    position: "Sandwich Artist",
     company: "Subway",
   },
 ];

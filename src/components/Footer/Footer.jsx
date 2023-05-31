@@ -17,7 +17,7 @@ const Footer = () => {
       }}
     >
       <div className="copyright">
-        <p>Copyright &copy; 2023 All rights reserved | Made by <span>Humberto Navarro</span></p>
+        <p>Copyright &copy; 2023 All rights reserved | Made by <a href='https://github.com/fanpug' target='_blank'>Alex Navarro</a></p>
       </div>
 
       <div className="follow-me">
