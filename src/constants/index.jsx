@@ -67,6 +67,12 @@ export const bios = [
     key: "Email",
     value: "navarro.andujo444@yahoo.com",
   },
+  {
+    id: 3,
+    icon: <FaMapMarkerAlt />,
+    key: "Location",
+    value: "Chihuahua, México",
+  },
 ];
 
 export const icons = [
@@ -146,11 +152,6 @@ export const workNavs = [
 export const contacts = [
   {
     id: 1,
-    icon: <FaMapMarkerAlt />,
-    infoText: "16 Road, TharKayTa , Yangon"
-  },
-  {
-    id: 2,
     icon: <FaPaperPlane />,
     infoText: "abee02@gmail.com"
   }
