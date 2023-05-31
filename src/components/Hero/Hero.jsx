@@ -57,7 +57,7 @@ const Hero = () => {
         </motion.a>
         <div className="web">Web Developer</div>
         <div className="ui">UI/UX Designer</div>
-        <div className="freelance">Freelancer</div>
+        <div className="freelance">Front-end</div>
       </div>
     </motion.section>
   )
