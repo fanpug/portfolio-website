@@ -53,9 +53,9 @@ const Navbar = () => {
       className={scroll ? "header active" : "header"}
     >
       <nav className='nav-container'>
-        <div className='logo'>
+        <a href='#' className='logo'>
           <h3>HN</h3>
-        </div>
+        </a>
 
         <ul className='nav-links'>
           {navLinks.map((navLink, index) => (
