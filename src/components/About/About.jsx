@@ -52,6 +52,10 @@ const About = () => {
           }}
         >
           <p>
+            Soy un estudiante de ingeniería en ciencias computacionales, graduación esperada en Septiembre 2023.
+
+            <br /> <br />
+
             Mi objetivo es crecer y hacer un impacto en la industria. Seguir aprendiendo y creciendo
             profesionalmente, tomando cursos de desarrollo y capacitación para mantenerse
             actualizado con las últimas tecnologías y tendencias de la industria.
