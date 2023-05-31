@@ -3,11 +3,12 @@
     grid-template-columns: repeat(2,1fr);
     background: #fff;
     border-radius: 15px;
-    max-width: 1100px;
+    max-width: 900px;
     gap: 2rem;
     overflow: hidden;
     margin: 0 auto;
     padding: 2rem;
+    justify-items: center;
 
     @media screen and (max-width: 760px) {
         grid-template-columns: 1fr;
@@ -15,27 +16,30 @@
 
 }
 
-.contact-left-container {
-    h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    }
-
-}
-
-.contact-text {
-    font-size: 0.85rem;
-    margin-bottom: 1rem;
-}
-
 .contact-left {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 1rem;
+}
 
+.contact-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
     
-    p {
-        font-size: 0.85rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+
+.contact-text {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        scale: 1.1;
+        opacity: 1;
     }
 }
 
@@ -49,80 +53,54 @@
     align-items: center;
     justify-content: center;
     margin-right: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        scale: 1.2;
+        opacity: 1;
+    }
 }
 
 .contact-social-icons {
     display: flex;
-    margin-top: 4rem;
+    align-items: center;
     justify-content: space-evenly;
-
-    //this style will only apply if the device
-    //has a screen and that screen is 768px or smaller
-    @media screen and (max-width: 768px) {
-        margin-top: 2rem;
-    }
+    width: 100%;
 
     a {
-        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        svg {
-            color: #000;
-            opacity: 0.7;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 3.2rem;
+    svg {
+        color: #000;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 3.2rem;
 
-            &:hover {
-                opacity: 1;
-            }
+        &:hover {
+            scale: 1.2;
+            opacity: 1;
         }
     }
 }
 
-.contact-right {
-    h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
+.contact-right-container {
+    max-width: 400px;
+    width: fit-content;
+    
+    @media screen and (max-width: 768px) {
+        width: fit-content;
     }
 }
 
-.row {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: 0.5rem;
+.contact-left-container {
+    max-width: 400px;
+    width: fit-content;
 
-    input {
-        border: none;
-        outline: none;
-        margin-bottom: 0.5rem;
-        padding: 1rem 1.5rem;
-        background: #f3f3f3;
-        border-radius: 5px;
-    }
-
-    textarea {
-        border: none;
-        outline: none;
-        margin-bottom: 0.5rem;
-        padding: 1rem 1.5rem;
-        background: #f3f3f3;
-        border-radius: 5px;
-        resize: none;
-        min-height: 150px;
-    }
-}
-
-.btn {
-    background: #8c12f0;
-    margin-top: 1rem;
-    padding: 0.65rem 1rem;
-    border-radius: 10px;
-    width: 4.2rem;
-    cursor: pointer;
-
-    a {
-        text-decoration: none;
-        color: #fff;
+    @media screen and (max-width: 768px) {
+        width: fit-content;
     }
 }

@@ -18,6 +18,7 @@ const Contact = () => {
         <span>Get in touch</span>
         <h1>Contact me</h1>
       </motion.div>
+
       <div className="contact-form">
         <motion.div 
           className="contact-left-container"
@@ -33,27 +34,27 @@ const Contact = () => {
             duration: 1
           }}
         >
-          <h3>Just Say Hi!</h3>
-          <p className='contact-text'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem distinctio dolor quisquam eveniet quo praesentium nulla, earum delectus expedita ut enim pariatur facilis quibusdam minima vitae aliquam a nostrum deleniti?
-          </p>
+          <h3 className='contact-title'>Just send me an email!</h3>
 
           {contacts.map((contact) => 
             <div 
               className="contact-left"
               key={contact.id}
             >
-              <div className="contact-icon">{contact.icon}</div>
-              <p>{contact.infoText}</p>
+              <a 
+                href={`mailto:${contact.infoText}`} 
+                className='contact-icon'
+              >
+                {contact.icon}
+              </a>
+              <a 
+                href={`mailto:${contact.infoText}`}
+                className='contact-text'
+              >
+                {contact.infoText}
+              </a>
             </div>
           )}
-          <div className="contact-social-icons">
-            {socialMedia.map((icon, idx) => 
-              <a href={icon.link} key={idx} target='_blank'>
-                {icon.icon}
-              </a>
-            )}
-          </div>
         </motion.div>
         
         <motion.div 
@@ -70,30 +71,14 @@ const Contact = () => {
             duration: 1
           }}
         >
-          <h3>Get In Touch</h3>
-          <div className="row">
-            <input type="text" placeholder='First Name'/>
+          <h3 className='contact-title'>Or through social media!</h3>
+          <div className="contact-social-icons">
+            {socialMedia.map((icon, idx) => 
+              <a href={icon.link} key={idx} target='_blank'>
+                {icon.icon}
+              </a>
+            )}
           </div>
-          <div className="row">
-            <input type="text" placeholder='Last Name'/>
-          </div>
-          <div className="row">
-            <input type="email" placeholder='Email'/>
-          </div>
-          <div className="row">
-            <textarea placeholder='Message'></textarea>
-          </div>
-          <motion.div 
-            className="btn"
-            whileHover={{
-              scale: 1.1
-            }}
-            transition={{
-              duration: 0.2
-            }}
-          >
-            <a href="#">Send</a>
-          </motion.div>
         </motion.div>
       </div>
     </section>
