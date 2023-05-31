@@ -59,7 +59,7 @@
     //this style will only apply if the device
     //has a screen and that screen is 768px or smaller
     @media screen and (max-width: 768px) {
-        display: none;
+        margin-top: 2rem;
     }
 
     a {
