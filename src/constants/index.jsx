@@ -1,8 +1,8 @@
 import {
   FaHtml5,
-  FaCss3,
   FaNodeJs,
   FaReact,
+  FaCss3Alt,
   FaSass,
   FaFigma,
   FaUser,
@@ -11,9 +11,18 @@ import {
   FaGithub,
   FaLinkedin,
   FaMapMarkerAlt,
+  FaAws,
+  FaPython,
+  FaDocker
 } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
+import { 
+  SiTypescript, 
+  SiMongodb, 
+  SiTailwindcss, 
+  SiNextdotjs, 
+} from "react-icons/si";
+import { DiJava } from "react-icons/di";
+import { TbSql } from "react-icons/tb";
 import { work1, work2 } from '../assets';
 
 export const navLinks = [
@@ -77,33 +86,29 @@ export const bios = [
 
 export const icons = [
   <FaHtml5 />,
-  <FaCss3 />,
-  <DiJavascript />,
+  <FaCss3Alt />,
+  <FaNodeJs />,
   <SiTypescript />,
   <FaReact />,
-  <FaNodeJs />,
+  <SiNextdotjs />,
   <FaSass />,
+  <SiTailwindcss />,
+  <FaPython />,
+  <DiJava />,
+  <TbSql />,
+  <SiMongodb />,
   <FaFigma />,
+  <FaAws />,
+  <FaDocker />,
+
 ];
 
 export const experiences = [
   {
     id: 1,
-    year: "2022",
-    position: "Senior Web Developer",
-    company: "shop.com.mm",
-  },
-  {
-    di: 2,
-    year: "2021",
-    position: "Junior Web Developer",
-    company: "shop.com.mm",
-  },
-  {
-    id: 3,
     year: "2019",
-    position: "Intern Web Dveloper",
-    company: "shop.com.mm",
+    position: "Artista del Sandwich",
+    company: "Subway",
   },
 ];
 /*
