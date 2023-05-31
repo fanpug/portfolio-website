@@ -148,15 +148,14 @@ const Portfolio = () => {
         <div className="talk_left">
           <h3>so let's talk about <br /> <span>your next project</span></h3>
         </div>
-        <motion.div
+        <motion.a
+          href="#contact"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
-          className="talk_right">
-          <a href="#contact"
-          >
-            Contact Me
-          </a>
-        </motion.div>
+          className="talk_right"
+        >
+          Contact Me
+        </motion.a>
       </motion.div>
     </section>
   )
