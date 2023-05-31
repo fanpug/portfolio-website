@@ -158,14 +158,14 @@ export const workImages = [
     id: 3,
     img: work3,
     name: "Administración de Ligas de Fútbol",
-    category: "app",
+    category: "design",
     repo: "https://github.com/a329782/UXProjectApp",
     view: "https://github.com/a329782/UXProjectApp"
   },
 ];
 
 export const workNavs = [
-  "All", "Web", "App", "Design"
+  "All", "Web", "Design"
 ];
 
 export const contacts = [

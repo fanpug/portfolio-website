@@ -105,7 +105,8 @@ const Portfolio = () => {
                 transition={{
                   duration: 0.3
                 }}
-                href="#"
+                href={workImage.repo}
+                target='_blank'
               >
                 <FiGithub />
               </motion.a>
@@ -122,7 +123,8 @@ const Portfolio = () => {
                 transition={{
                   duration: 0.3
                 }}
-                href="#"
+                href={workImage.view}
+                target='_blank'
               >
                 <FiEye />
               </motion.a>
