@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const About = () => {
   return (
     <section className='container' id='about'>
-      <motion.div 
+      <motion.div
         className='title'
         initial={{
           opacity: 0
@@ -20,11 +20,11 @@ const About = () => {
         <h1>About Me</h1>
       </motion.div>
       <div className="about-container">
-        <motion.div 
+        <motion.div
           className="about-left"
           initial={{
             x: 0,
-            opacity:0
+            opacity: 0
           }}
           whileInView={{
             x: [-250, 0],
@@ -37,11 +37,11 @@ const About = () => {
           <img src={portfolio} alt="About image" />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="about-right"
           initial={{
             x: 0,
-            opacity:0
+            opacity: 0
           }}
           whileInView={{
             x: [250, 0],
@@ -52,10 +52,12 @@ const About = () => {
           }}
         >
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil sit nam itaque debitis fugit accusantium officia praesentium iusto reprehenderit soluta ad, delectus dolor voluptate. Id harum voluptatem consequuntur commodi sunt.
+            Mi objetivo es crecer y hacer un impacto en la industria. Seguir aprendiendo y creciendo
+            profesionalmente, tomando cursos de desarrollo y capacitación para mantenerse
+            actualizado con las últimas tecnologías y tendencias de la industria.
           </p>
           {bios.map((bio) => {
-            if(bio.key === "Email") {
+            if (bio.key === "Email") {
               return (
                 <div className='bio' key={bio.id}>
                   <span className='bioKey'>{bio.icon}{bio.key}</span>
@@ -71,11 +73,11 @@ const About = () => {
               );
             }
           })}
-          <motion.a 
-            href={curriculum} 
+          <motion.a
+            href={curriculum}
             download="Curriculum-Humberto"
-            whileHover={{scale: 1.1}}
-            transition={{duration: 0.3}}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
           >
             Download Resume
           </motion.a>
