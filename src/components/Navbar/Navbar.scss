@@ -67,9 +67,10 @@
         display: none;
     }
 
-    div {
+    a {
         margin-left: 1rem;
-
+        text-decoration: none;
+        
         svg {
             color: #fff;
             opacity: 0.6;

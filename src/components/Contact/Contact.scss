@@ -53,7 +53,8 @@
 
 .contact-social-icons {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 4rem;
+    justify-content: space-evenly;
 
     //this style will only apply if the device
     //has a screen and that screen is 768px or smaller
@@ -61,15 +62,15 @@
         display: none;
     }
 
-    div {
+    a {
         margin-right: 1rem;
 
         svg {
             color: #000;
-            opacity: 0.6;
+            opacity: 0.7;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 1.3rem;
+            font-size: 3.2rem;
 
             &:hover {
                 opacity: 1;
