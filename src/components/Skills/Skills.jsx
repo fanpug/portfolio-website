@@ -19,8 +19,8 @@ const Skills = () => {
           opacity: 1
         }}
       >
-        <span>What I Expert</span>
-        <h1>Skills And Experience</h1>
+        <span>Tecnologías y Lenguajes de Programación</span>
+        <h1>Habilidades y Experiencia</h1>
       </motion.div>
 
       <motion.div 
@@ -37,14 +37,14 @@ const Skills = () => {
           onClick={() => setActiveButton(1)}
           className={activeButton === 1 ? "active" : ""}
         >
-          Skills
+          Habilidades
         </button>
 
         <button
           onClick={() => setActiveButton(2)}
           className={activeButton === 2 ? "active" : ""}
         >
-          Experience
+          Experiencia
         </button>
       </motion.div>
 

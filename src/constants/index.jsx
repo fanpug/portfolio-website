@@ -29,23 +29,23 @@ import { work1, work2, work3 } from '../assets';
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Inicio",
   },
   {
     id: "about",
-    title: "About",
+    title: "Sobre mí",
   },
   {
     id: "skills",
-    title: "Skills",
+    title: "Habilidades",
   },
   {
     id: "portfolio",
-    title: "Portfolio",
+    title: "Portafolio",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contacto",
   },
 ];
 
@@ -68,8 +68,8 @@ export const bios = [
   {
     id: 1,
     icon: <FaUser />,
-    key: "Name",
-    value: "Alex Navarro",
+    key: "Nombre",
+    value: "Humberto Navarro",
   },
   {
     id: 2,
@@ -80,7 +80,7 @@ export const bios = [
   {
     id: 3,
     icon: <FaMapMarkerAlt />,
-    key: "Location",
+    key: "Ubicación",
     value: "Chihuahua, México",
   },
 ];
@@ -109,7 +109,7 @@ export const experiences = [
   {
     id: 1,
     year: "2019",
-    position: "Sandwich Artist",
+    position: "Artista del Sandwich",
     company: "Subway",
   },
 ];
@@ -158,14 +158,14 @@ export const workImages = [
     id: 3,
     img: work3,
     name: "Administración de Ligas de Fútbol",
-    category: "design",
+    category: "diseño",
     repo: "https://github.com/a329782/UXProjectApp",
     view: "https://github.com/a329782/UXProjectApp"
   },
 ];
 
 export const workNavs = [
-  "All", "Web", "Design"
+  "Todos", "Web", "Diseño"
 ];
 
 export const contacts = [

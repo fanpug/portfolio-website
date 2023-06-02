@@ -15,8 +15,8 @@ const Contact = () => {
           opacity: 1
         }}
       >
-        <span>Get in touch</span>
-        <h1>Contact me</h1>
+        <span>Ponte en contacto</span>
+        <h1>Contáctame</h1>
       </motion.div>
 
       <div className="contact-form">
@@ -34,7 +34,7 @@ const Contact = () => {
             duration: 1
           }}
         >
-          <h3 className='contact-title'>Just send me an email!</h3>
+          <h3 className='contact-title'>¡Mándame un correo!</h3>
 
           {contacts.map((contact) => 
             <div 
@@ -71,7 +71,7 @@ const Contact = () => {
             duration: 1
           }}
         >
-          <h3 className='contact-title'>Or through social media!</h3>
+          <h3 className='contact-title'>¡O a través de redes sociales!</h3>
           <div className="contact-social-icons">
             {socialMedia.map((icon, idx) => 
               <a href={icon.link} key={idx} target='_blank'>

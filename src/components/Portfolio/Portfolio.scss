@@ -87,7 +87,7 @@
 .talk {
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
     border-radius: 15px;
@@ -117,7 +117,6 @@
         }
     }
     .talk_right {
-        align-self: flex-end;
         margin-bottom: 1.5rem;
         background: #8c12f0;
         padding: 0.65rem 1rem;
@@ -127,5 +126,9 @@
         text-decoration: none;
         color: #fff;
         text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
     }
 }

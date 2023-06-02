@@ -5,12 +5,12 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
-  const [tab, setTab] = useState({ name: "all" });
+  const [tab, setTab] = useState({ name: "todos" });
   const [works, setWorks] = useState([]);
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (tab.name === "all") {
+    if (tab.name === "todos") {
       setWorks(workImages)
     } else {
       const newWork = workImages.filter((workImage) => workImage.category.toLowerCase() === tab.name);
@@ -35,8 +35,8 @@ const Portfolio = () => {
           opacity: 1
         }}
       >
-        <span>My Work</span>
-        <h1>Awesome Projects</h1>
+        <span>Mi trabajo</span>
+        <h1>Mis Proyectos</h1>
       </motion.div>
 
       <motion.div 
@@ -148,7 +148,7 @@ const Portfolio = () => {
         }}
       >
         <div className="talk_left">
-          <h3>so let's talk about <br /> <span>your next project</span></h3>
+          <h3>entonces hablemos sobre <br /> <span>tu próximo proyecto</span></h3>
         </div>
         <motion.a
           href="#contact"
@@ -156,7 +156,7 @@ const Portfolio = () => {
           transition={{ duration: 0.3 }}
           className="talk_right"
         >
-          Contact Me
+          Contáctame
         </motion.a>
       </motion.div>
     </section>

@@ -38,13 +38,13 @@ const Hero = () => {
       </div>
       <div className="profile-text">
         <h3 className='name'>
-          Hi, I'm <span>Alex Navarro</span>
+          Hola, soy <span>Humberto Navarro</span>
         </h3>  
-        <h4 className='job'>Web Developer</h4>
+        <h4 className='job'>Programador Web</h4>
         <p className='text'>
-          Passionate <br />
-          to craft innovative <br />
-          web products.
+          Comprometido <br />
+          a crear soluciones <br />
+          innovadoras.
         </p>
         <motion.a 
           href="#contact"
@@ -53,11 +53,11 @@ const Hero = () => {
           whileHover={{scale: 1.1}}
           transition={{duration: 0.3}}
         >
-          Connect With Me
+          Conozcámonos
         </motion.a>
-        <div className="web">Web Developer</div>
-        <div className="ui">UI/UX Designer</div>
-        <div className="freelance">Engineer</div>
+        <div className="web">Fullstack Dev</div>
+        <div className="ui">Diseñador UI/UX</div>
+        <div className="freelance">Ingeniero</div>
       </div>
     </motion.section>
   )

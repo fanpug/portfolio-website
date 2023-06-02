@@ -17,11 +17,11 @@ const Footer = () => {
       }}
     >
       <div className="copyright">
-        <p>Copyright &copy; 2023 All rights reserved | Made by <a href='https://github.com/fanpug' target='_blank'>Alex Navarro</a></p>
+        <p>Copyright &copy; 2023 Derechos reservados | Hecho por <a href='https://github.com/fanpug' target='_blank'>Humberto Navarro</a></p>
       </div>
 
       <div className="follow-me">
-        <h4>Follow Me</h4>
+        <h4>Sígueme</h4>
         <div className="stick"></div>
         <div className="footer-social-icons">
           {socialMedia.map((icon, idx) => 

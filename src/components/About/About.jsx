@@ -16,8 +16,8 @@ const About = () => {
           opacity: 1
         }}
       >
-        <span>Who Am I?</span>
-        <h1>About Me</h1>
+        <span>¿Quién soy?</span>
+        <h1>Acerca de mí</h1>
       </motion.div>
       <div className="about-container">
         <motion.div
@@ -52,11 +52,12 @@ const About = () => {
           }}
         >
           <p>
-            I am a computer science engineering student, expected to graduate in September 2023.
+          Soy un estudiante de ingeniería en ciencias computacionales, graduación esperada en Septiembre 2023.
 
             <br /> <br />
 
-            My goal is to grow and make an impact in the industry. I aim to continue learning and growing professionally by taking development courses and training to stay up-to-date with the latest technologies and industry trends.
+            Mi objetivo es crecer y hacer un impacto en la industria. Seguir aprendiendo y creciendo profesionalmente, tomando cursos de desarrollo y capacitación para mantenerse actualizado con las últimas tecnologías y tendencias de la industria.
+            Hablo inglés y español fluido.
           </p>
           {bios.map((bio) => {
             if (bio.key === "Email") {
@@ -81,7 +82,7 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
-            Download Resume
+            Descargar Curriculum
           </motion.a>
         </motion.div>
       </div>
